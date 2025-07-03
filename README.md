@@ -31,13 +31,13 @@ Key facts from the environment:
 ## 3. Results
 
 * **Mid-training**: the humanoid can balance and take an occasional step, but often “slides” on one leg.  
-* Episodic reward begins near zero, rises gently until roughly episode 150, then accelerates sharply. By episode 250 the agent surpasses 20 000 reward, continues fluctuating upward, and plateaus between 40 000 and 55 000 by episode 500. The steep section corresponds to the moment the humanoid first discovers stable alternating steps.
+* Episodic reward begins near zero, rises gently until roughly episode 150, then accelerates sharply. By episode 250 the agent surpasses 20,000 reward, continues fluctuating upward, and plateaus between 40,000 and 55,000 by episode 500. The steep section corresponds to the moment the humanoid first discovers stable alternating steps.
 * Training a single run to the “stand and first step” milestone took about **10 h** on a 16-core CPU.
 * A separate run tracked mean episodic reward against environment steps:
 
 | Algorithm | Peak mean reward | Qualitative trend |
 |-----------|-----------------|-------------------|
-| **SAC**   | ~4 200 by 400 k steps | Smooth, monotonic climb after an initial flat period |
+| **SAC**   | ~4,200 by 400k steps | Smooth, monotonic climb after an initial flat period |
 | **TD3**   | < 100 for the same horizon | Remains near zero with minor upticks |
 | **A2C**   | < 100 for the same horizon | Flat, similar to TD3 |
 
